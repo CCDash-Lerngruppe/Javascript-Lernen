@@ -3,28 +3,32 @@
 
 ## Arithmetische Operatoren
 
-JavaScript unterstützt grundlegende mathematische Operatoren:
-- Addition: `+`
-- Subtraktion: `-`
-- Multiplikation: `*`
-- Division: `/`
-- Modulus (Rest): `%`
+Diese Operatoren werden für mathematische Berechnungen verwendet:
+- `+` (Addition)
+- `-` (Subtraktion)
+- `*` (Multiplikation)
+- `/` (Division)
+- `%` (Modulus, Rest einer Division)
 
 ### Beispiel:
 ```javascript
 let a = 10;
 let b = 3;
 
-console.log(a + b); // Ausgabe: 13
-console.log(a % b); // Ausgabe: 1
+console.log(a + b); // 13
+console.log(a % b); // 1
 ```
+
+---
 
 ## Vergleichsoperatoren
 
-Vergleichsoperatoren werden verwendet, um Werte zu vergleichen:
-- Gleichheit: `==` (Typ wird nicht geprüft), `===` (Typ wird geprüft)
-- Ungleichheit: `!=`, `!==`
-- Größer/Kleiner: `>`, `<`, `>=`, `<=`
+Vergleichsoperatoren vergleichen Werte und geben einen Boolean zurück (`true` oder `false`):
+- `==` (Gleichheit, ignoriert Typen)
+- `===` (Strikte Gleichheit)
+- `!=` (Ungleichheit)
+- `!==` (Strikte Ungleichheit)
+- `>`, `<`, `>=`, `<=`
 
 ### Beispiel:
 ```javascript
@@ -32,23 +36,28 @@ console.log(5 == "5");  // true
 console.log(5 === "5"); // false
 ```
 
+---
+
 ## Logische Operatoren
 
-- UND (`&&`): Alle Bedingungen müssen wahr sein.
-- ODER (`||`): Mindestens eine Bedingung muss wahr sein.
-- NICHT (`!`): Negiert den Wahrheitswert.
+Verwende logische Operatoren, um Bedingungen zu kombinieren:
+- `&&` (UND)
+- `||` (ODER)
+- `!` (NICHT)
 
 ### Beispiel:
 ```javascript
-let a = true;
-let b = false;
+let x = true;
+let y = false;
 
-console.log(a && b); // false
-console.log(a || b); // true
-console.log(!a);     // false
+console.log(x && y); // false
+console.log(x || y); // true
+console.log(!x);     // false
 ```
+
+---
 
 ## Übung
 
-1. Schreibe ein Programm, das prüft, ob eine Zahl gerade oder ungerade ist.
-2. Experimentiere mit den Vergleichs- und logischen Operatoren.
+1. Schreibe ein Programm, das überprüft, ob eine Zahl gerade oder ungerade ist.
+2. Experimentiere mit verschiedenen Vergleichs- und logischen Operatoren.

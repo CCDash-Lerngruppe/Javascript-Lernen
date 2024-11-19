@@ -1,14 +1,17 @@
 
-# Lektion 10: Projektarbeit
+# Lektion 10: Projektarbeit - To-Do-App
 
-## Projektidee: Interaktive To-Do-App
+## Ziel
 
-### Anforderungen:
+Erstelle eine interaktive To-Do-App, die folgende Funktionen bietet:
 1. Aufgaben hinzufügen.
 2. Aufgaben als erledigt markieren.
 3. Aufgaben löschen.
 
-### Startpunkt:
+---
+
+## HTML-Grundgerüst
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -26,7 +29,36 @@
 </html>
 ```
 
-### Übung:
+---
 
-1. Implementiere die Logik in `app.js`.
-2. Füge Funktionen hinzu, um Aufgaben zu löschen und zu markieren.
+## Logik in `app.js`
+
+### Beispielcode:
+```javascript
+document.getElementById("hinzufügen").addEventListener("click", () => {
+    const aufgabe = document.getElementById("aufgabe").value;
+    if (aufgabe) {
+        const li = document.createElement("li");
+        li.textContent = aufgabe;
+        document.getElementById("liste").appendChild(li);
+        document.getElementById("aufgabe").value = "";
+        
+        // Aufgabe löschen
+        li.addEventListener("click", () => li.remove());
+    }
+});
+```
+
+---
+
+## Erweiterungsideen
+
+1. Speichere Aufgaben im lokalen Speicher (localStorage).
+2. Füge eine Checkbox hinzu, um Aufgaben als erledigt zu markieren.
+
+---
+
+## Übung
+
+1. Implementiere den Beispielcode und teste die App.
+2. Füge eine Erweiterung hinzu (z. B. lokale Speicherung oder Sortierfunktionen).

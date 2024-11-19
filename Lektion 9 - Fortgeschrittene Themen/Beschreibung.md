@@ -3,12 +3,12 @@
 
 ## Module
 
-Verwenden Sie `import` und `export`, um Code zu organisieren.
+Mit Modulen können Funktionen und Variablen in andere Dateien exportiert und importiert werden.
 
 ### Beispiel:
 **datei1.js**
 ```javascript
-export const sagHallo = () => console.log("Hallo!");
+export const sagHallo = () => console.log("Hallo, Welt!");
 ```
 
 **datei2.js**
@@ -17,20 +17,34 @@ import { sagHallo } from './datei1.js';
 sagHallo();
 ```
 
+---
+
 ## Fehlerbehandlung
 
-Verwenden Sie `try`/`catch`, um Fehler abzufangen.
+Verwende `try`/`catch`, um Fehler im Code zu behandeln.
 
 ### Beispiel:
 ```javascript
 try {
     JSON.parse("ungültig");
-} catch (error) {
-    console.log("Fehler:", error.message);
+} catch (fehler) {
+    console.error("Fehler:", fehler.message);
 }
 ```
 
+---
+
+## Ein Blick auf Frameworks
+
+JavaScript-Frameworks wie **React**, **Vue.js** oder **Angular** vereinfachen die Entwicklung moderner Anwendungen.
+
+- **React:** Komponentenbasiertes UI-Framework.
+- **Vue.js:** Fortschrittliches Framework für Benutzeroberflächen.
+- **Angular:** Komplettes Framework für Web-Anwendungen.
+
+---
+
 ## Übung
 
-1. Schreibe ein Modul, das eine mathematische Funktion exportiert.
-2. Implementiere ein Skript, das eine JSON-Datei lädt und Fehler abfängt.
+1. Schreibe ein Modul, das eine einfache Funktion exportiert und importiere es in einer anderen Datei.
+2. Simuliere einen JSON-Fehler und fange ihn mit `try`/`catch` ab.

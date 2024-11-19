@@ -1,9 +1,9 @@
 
 # Lektion 7: Grundlagen von Objektorientierung
 
-## Was sind Objekte?
+## Einführung in Objekte
 
-Objekte sind Sammlungen von Eigenschaften und Methoden.
+Ein Objekt ist eine Sammlung von Eigenschaften und Methoden.
 
 ### Beispiel:
 ```javascript
@@ -17,9 +17,11 @@ const auto = {
 auto.beschleunigen();
 ```
 
+---
+
 ## Klassen
 
-Mit ES6 wurden Klassen eingeführt.
+Klassen sind Blaupausen für Objekte.
 
 ### Beispiel:
 ```javascript
@@ -32,11 +34,10 @@ class Rechteck {
         return this.breite * this.hoehe;
     }
 }
-let meinRechteck = new Rechteck(5, 10);
-console.log(meinRechteck.flaeche());
 ```
+
+---
 
 ## Übung
 
-1. Erstelle ein Objekt, das ein Buch beschreibt (Titel, Autor, Jahr).
-2. Implementiere eine Klasse `Kreis`, die den Radius speichert und die Fläche berechnet.
+1. Erstelle eine Klasse `Kreis`, die den Radius speichert und die Fläche berechnet.

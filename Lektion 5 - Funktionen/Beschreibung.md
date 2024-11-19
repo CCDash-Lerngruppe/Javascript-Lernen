@@ -3,27 +3,39 @@
 
 ## Was sind Funktionen?
 
-Funktionen sind wiederverwendbare Blöcke von Code, die eine Aufgabe ausführen. Sie können Parameter annehmen und Werte zurückgeben.
+Funktionen sind Blöcke von wiederverwendbarem Code. Sie nehmen Eingaben (Parameter) entgegen, führen Berechnungen aus und geben Ergebnisse zurück.
 
-### Funktionsdeklaration:
+### Syntax:
 ```javascript
-function sagHallo(name) {
-    console.log(`Hallo, ${name}!`);
+function nameDerFunktion(parameter1, parameter2) {
+    // Codeblock
+    return ergebnis;
 }
-sagHallo("Max");
 ```
-
-## Arrow Functions
-
-Eine kürzere Syntax für Funktionen.
 
 ### Beispiel:
 ```javascript
-const addiere = (a, b) => a + b;
-console.log(addiere(5, 3)); // 8
+function addiere(a, b) {
+    return a + b;
+}
+console.log(addiere(3, 5)); // 8
 ```
+
+---
+
+## Arrow Functions
+
+Eine kürzere Schreibweise für Funktionen.
+
+### Beispiel:
+```javascript
+const multipliziere = (a, b) => a * b;
+console.log(multipliziere(4, 5)); // 20
+```
+
+---
 
 ## Übung
 
-1. Schreibe eine Funktion, die das Quadrat einer Zahl berechnet.
-2. Erstelle eine Arrow Function, die zwei Strings verbindet.
+1. Schreibe eine Funktion, die prüft, ob eine Zahl gerade oder ungerade ist.
+2. Implementiere eine Funktion, die den Umfang eines Kreises berechnet.

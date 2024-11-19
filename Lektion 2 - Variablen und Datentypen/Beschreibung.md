@@ -1,48 +1,69 @@
 
 # Lektion 2: Variablen und Datentypen
 
-## Variablen in JavaScript
+## Einführung in Variablen
 
-Variablen sind Container, um Werte zu speichern. In JavaScript gibt es drei Möglichkeiten, Variablen zu deklarieren:
+Variablen sind benannte Speicherplätze, die Daten speichern. In JavaScript gibt es drei Schlüsselwörter zum Deklarieren von Variablen:
+1. `var` (veraltet, sollte vermieden werden)
+2. `let` (empfohlen für veränderliche Werte)
+3. `const` (für unveränderliche Werte)
 
-- `var` (veraltet, verwenden Sie lieber `let` oder `const`)
-- `let` (variabel)
-- `const` (konstant)
-
-### Beispiel
-
+### Beispiele:
 ```javascript
 let name = "Max";
 const alter = 25;
-
-console.log(name);  // Ausgabe: Max
-console.log(alter); // Ausgabe: 25
+var stadt = "Hamburg"; // Nicht empfohlen
 ```
+
+### Best Practices:
+- Verwende `let` für Variablen, die sich ändern können.
+- Verwende `const`, wenn der Wert nicht verändert werden soll.
+
+---
 
 ## Datentypen
 
-JavaScript hat verschiedene Datentypen:
+JavaScript hat verschiedene Datentypen. Diese lassen sich in zwei Kategorien einteilen:
+1. **Primitive Datentypen:** Strings, Numbers, Booleans, `undefined`, `null`, `Symbol`, `BigInt`.
+2. **Objektdatentypen:** Arrays, Objekte, Funktionen.
 
-- **Strings**: Zeichenketten (z. B. `"Hallo"`)
-- **Numbers**: Zahlen (z. B. `42`)
-- **Booleans**: Wahrheitswerte (`true`, `false`)
-- **undefined**: Nicht initialisierte Variablen
-- **null**: Absichtlicher leerer Wert
+### Primitive Datentypen:
+- **String:** Text, eingeschlossen in Anführungszeichen.
+  ```javascript
+  let text = "Hallo, Welt!";
+  ```
+- **Number:** Ganzzahlen oder Dezimalzahlen.
+  ```javascript
+  let zahl = 42;
+  ```
+- **Boolean:** Wahrheitswerte.
+  ```javascript
+  let istWahr = true;
+  ```
+- **`undefined` und `null`:**
+  ```javascript
+  let nichtDefiniert;
+  let leer = null;
+  ```
 
-### Beispiel
+---
 
+## Dynamische Typisierung
+
+JavaScript ist dynamisch typisiert, d. h. der Typ einer Variablen kann sich ändern.
+
+### Beispiel:
 ```javascript
-let text = "Hallo, Welt!";
-let zahl = 42;
-let istWahr = true;
-
-console.log(typeof text); // Ausgabe: string
-console.log(typeof zahl); // Ausgabe: number
-console.log(typeof istWahr); // Ausgabe: boolean
+let daten = 42;       // Number
+daten = "Text";       // Jetzt ein String
 ```
+
+---
 
 ## Übung
 
-1. Erstelle Variablen für Name, Alter und ob du JavaScript magst.
-2. Gib die Werte und deren Typen in der Konsole aus.
-3. Was passiert, wenn du `const` erneut zuweist?
+1. Deklariere Variablen für deinen Namen, dein Alter und deine Lieblingsstadt.
+2. Gib die Werte und deren Typ in der Konsole aus.
+3. Experimentiere mit `let` und `const`, indem du Werte neu zuweist.
+
+**Zusatzübung:** Schreibe ein Programm, das zwei Zahlen addiert und das Ergebnis ausgibt.

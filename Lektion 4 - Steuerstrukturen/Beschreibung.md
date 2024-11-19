@@ -3,7 +3,18 @@
 
 ## Bedingungen
 
-Mit `if`, `else` und `else if` können Sie Bedingungen überprüfen.
+Mit `if`, `else` und `else if` können Entscheidungen getroffen werden.
+
+### Syntax:
+```javascript
+if (Bedingung) {
+    // Code wird ausgeführt, wenn die Bedingung wahr ist
+} else if (weitereBedingung) {
+    // Code wird ausgeführt, wenn weitereBedingung wahr ist
+} else {
+    // Code wird ausgeführt, wenn keine Bedingung wahr ist
+}
+```
 
 ### Beispiel:
 ```javascript
@@ -18,29 +29,34 @@ if (zahl > 0) {
 }
 ```
 
+---
+
 ## `switch`-Anweisung
 
-Eine kompakte Möglichkeit, mehrere Fälle zu prüfen.
+Prüft mehrere Fälle und führt den passenden Code aus.
 
 ### Beispiel:
 ```javascript
-let farbe = "rot";
+let tag = "Montag";
 
-switch (farbe) {
-    case "rot":
-        console.log("Stop!");
+switch (tag) {
+    case "Montag":
+        console.log("Neue Woche, neues Glück!");
         break;
-    case "grün":
-        console.log("Go!");
+    case "Freitag":
+        console.log("Fast Wochenende!");
         break;
     default:
-        console.log("Unbekannte Farbe.");
+        console.log("Ein ganz normaler Tag.");
 }
 ```
+
+---
 
 ## Schleifen
 
 ### `for`-Schleife
+Wird verwendet, wenn die Anzahl der Wiederholungen bekannt ist.
 ```javascript
 for (let i = 0; i < 5; i++) {
     console.log(i);
@@ -48,6 +64,7 @@ for (let i = 0; i < 5; i++) {
 ```
 
 ### `while`-Schleife
+Wird verwendet, wenn die Wiederholungsbedingung flexibel ist.
 ```javascript
 let i = 0;
 while (i < 5) {
@@ -55,6 +72,18 @@ while (i < 5) {
     i++;
 }
 ```
+
+### `do-while`-Schleife
+Führt den Code mindestens einmal aus, bevor die Bedingung geprüft wird.
+```javascript
+let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+```
+
+---
 
 ## Übung
 
